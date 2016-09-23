@@ -1,0 +1,39 @@
+.project
+{
+  border-style: solid;
+  border-color: @blue;
+  border-radius: .25rem;
+  border-width: 1px;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  .btn
+  {
+    .btn-custom(@blue, @white);
+  }
+
+  h2
+  {
+    color: @blue;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    padding-top: 3px;
+  }
+
+  p
+  {
+    color: lighten(@black, 50%);
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    height: 6em;
+    margin-bottom: 1.5rem;
+  }
+
+  span
+  {
+    float: right;
+    margin-top: 2px;
+    color: @blue;
+  }
+}
