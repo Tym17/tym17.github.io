@@ -136,13 +136,85 @@ footer .btn.active.focus {
   padding-left: 10px;
   padding-right: 10px;
   text-align: justify;
-  height: 6em;
+  height: 4em;
   margin-bottom: 1.5rem;
+  margin-top: 0.2rem;
 }
-.project span {
+.project .mega-octicon {
   float: right;
   margin-top: 2px;
   color: #55aaff;
+}
+.project .pill {
+  font-size: 0.8rem;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  border-radius: .35rem;
+}
+.def {
+  background-color: #ffffff;
+  color: #b3b3b3;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #b3b3b3;
+}
+.php {
+  background-color: #ffffff;
+  color: #6172a6;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #6172a6;
+}
+.magento {
+  background-color: #ffffff;
+  color: #ee5a27;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ee5a27;
+}
+.css {
+  background-color: #ffffff;
+  color: #6a528f;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #6a528f;
+}
+.sql {
+  background-color: #ffffff;
+  color: #e98f00;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e98f00;
+}
+.cpp {
+  background-color: #ffffff;
+  color: #f8668f;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #f8668f;
+}
+.sfml {
+  background-color: #ffffff;
+  color: #87c43b;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #87c43b;
+}
+.vue {
+  background-color: #ffffff;
+  color: #41b883;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #41b883;
+}
+.haxe {
+  background-color: #ffffff;
+  color: #df7900;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #df7900;
 }
 body {
   font-family: 'Open Sans', sans-serif;

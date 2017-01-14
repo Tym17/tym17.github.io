@@ -44,101 +44,26 @@
     </header>
 
     <div class="container">
-        <div class="row">
-            <!-- Sample Project
-      <div class="col-lg-4">
-      <div class="project">
-      <span class="mega-octicon octicon-repo"></span>
-      <h2>Lorem ipsum</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <a href="#" class="btn btn-block">View</a>
-    </div>
-  </div>
-  End project -->
+        <div class="row" id="app">
 
             <!-- Project -->
-            <div class="col-lg-4">
+            <div class="col-lg-4" v-for="project in projects">
                 <div class="project">
-                    <span class="mega-octicon octicon-repo"></span>
-                    <h2>AdminSample</h2>
-                    <p>Minimal code to create a backend module in Magento2.</p>
-                    <a href="https://github.com/Tym17/Magento2-Admin-Module-Sample" class="btn btn-block">View</a>
+                    <span class="mega-octicon" v-bind:class="project.icon"></span>
+                    <h2>{{ project.title }}</h2>
+                    <span v-for="tech in project.techs" class="pill" v-bind:class="tech.class">{{tech.name}}</span>
+                    <p>{{ project.desc }}</p>
+                    <a v-bind:href="project.link" class="btn btn-block">View</a>
                 </div>
             </div>
             <!-- End project -->
 
-            <!-- Project -->
-            <div class="col-lg-4">
-                <div class="project">
-                    <span class="mega-octicon octicon-repo"></span>
-                    <h2>SerieLast</h2>
-                    <p>Very simple self-made serie tracker. Helps you remember which episode is the last seen one.</p>
-                    <a href="https://github.com/Tym17/SerieLast" class="btn btn-block">View</a>
-                </div>
-            </div>
-            <!-- End project -->
-
-
-            <!-- Project -->
-            <div class="col-lg-4">
-                <div class="project">
-                    <span class="mega-octicon octicon-organization"></span>
-                    <h2>Unreality3D</h2>
-                    <p>Developped a modular GUI layer for the scripting engine and made the logo.</p>
-                    <a href="https://github.com/Unreality3D" class="btn btn-block">View</a>
-                </div>
-            </div>
-            <!-- End project -->
-
-            <!-- Project -->
-            <div class="col-lg-4">
-                <div class="project">
-                    <span class="mega-octicon octicon-repo"></span>
-                    <h2>VisualDark</h2>
-                    <p>Atom.io Theme. Dark theme with a blue touch and blinky brackets</p>
-                    <a href="https://github.com/Tym17/visualdark-syntax" class="btn btn-block">View</a>
-                </div>
-            </div>
-            <!-- End project -->
-
-            <!-- Project -->
-            <div class="col-lg-4">
-                <div class="project">
-                    <span class="mega-octicon octicon-repo"></span>
-                    <h2>CactaiGotchi</h2>
-                    <p>Ludum dare 35 entry. Made in C++/SFML. Theme was "shapeshift". Feed a cactus with different elements</p>
-                    <a href="https://github.com/Tym17/CactaiGotchi" class="btn btn-block">View</a>
-                </div>
-            </div>
-            <!-- End project -->
-
-            <!-- Project -->
-            <div class="col-lg-4">
-                <div class="project">
-                    <span class="mega-octicon octicon-repo"></span>
-                    <h2>Tym17.github.io</h2>
-                    <p>My github website you are browsing.</p>
-                    <a href="https://github.com/Tym17/tym17.github.io" class="btn btn-block">View</a>
-                </div>
-            </div>
-            <!-- End project -->
-
-            <!-- Project -->
-            <div class="col-lg-4">
-                <div class="project">
-                    <span class="mega-octicon octicon-git-branch"></span>
-                    <h2>Magento 2 Devdocs</h2>
-                    <p>Helped correcting dead links</p>
-                    <a href="https://github.com/Tym17/devdocs" class="btn btn-block">View</a>
-                </div>
-            </div>
-            <!-- End project -->
         </div>
     </div>
 
     <footer>
         <a href="http://tym17.com/contact" class="btn">Contact me</a>
     </footer>
+    <script src="js/my.js" type="text/javascript"></script>
 </body>
-
 </html>
