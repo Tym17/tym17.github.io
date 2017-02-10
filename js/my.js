@@ -67,13 +67,22 @@ var custom = new Vue({
             ]
         }, {
             title: 'Tym17.github.io',
-            desc: 'Contains infos about most of my repositories and serves me as a playground for Github\'s API',
+            desc: 'Contains infos about most of my repositories and serves me as a playground for Github\'s API.',
             icon: 'octicon-repo',
             link: 'https://github.com/Tym17/tym17.github.io',
             techs: [
               { name: 'Less', class: 'css' },
               { name: 'Bootstrap', class: 'css' },
               { name: 'VueJs', class: 'vue' }
+            ]
+            }, {
+            title: 'CaneléClicker',
+            desc: 'CookieClicker inspired game designed to teach basics of HTML/CSS/JS to students.',
+            icon: 'octicon-repo',
+            link: 'https://github.com/Tym17/CaneleClicker',
+            techs: [
+              { name: 'Teaching Material', class: 'def' },
+              { name: 'CSS', class: 'css' }
             ]
         }, {
             title: 'VisualDark',
