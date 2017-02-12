@@ -195,6 +195,13 @@ footer .btn.active.focus {
   border-style: solid;
   border-color: #f8668f;
 }
+.c {
+  background-color: #ffffff;
+  color: #3d3d3d;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #3d3d3d;
+}
 .sfml {
   background-color: #ffffff;
   color: #87c43b;
